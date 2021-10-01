@@ -13,26 +13,28 @@
         <h3>Contact Form</h3>
         <form action="https://formspree.io/f/mzbywekw" method="post">
             <div class="form-control">
-                <input type="text" required/>
+                <input type="text" id="uName" required/>
                 <label for="#">Username</label>   
             </div>
             <div class="form-control">
-                <input name="Email" id="email" required/>
+                <input name="Email" id="eMail" required/>
                 <label for="email" type="email">Email</label>   
             </div>
             <div class="form-control">
-                <input type="text" required/>
+                <input type="text" id="sub" required/>
                 <label for="#">Subject</label>   
             </div>
             <div class="form-control">
-                <textarea type="text" cols="30" rows="5" required/></textarea>
+                <textarea type="text" id="mess" cols="30" rows="5" required/></textarea>
                 <label for="#">Message</label>   
             </div>
             <div class="form-control">
-                <input type="submit" value="Form Submit"/>  
+                <input type="submit" value="Form Submit" onclick="sendForm()"/>  
             </div>
         </form>
     </div>
     
+    <script src="js/script.js"></script>
+
 </body>
 </html>
